@@ -43,7 +43,7 @@ extern "C" {
   /** call minimap2 alignment and returns SAM string (without header!).
   *  Call free() to free the return value.
   */
-  EXPORT char *ontmm_align(mm_bseq1_t query, const mm_idx_t *index, const int32_t idxMidOcc);
+  EXPORT char *ontmm_align(mm_bseq1_t query, const mm_idx_t *index, const int32_t idxMidOcc, const int32_t align_type);
 
   EXPORT void ontmm_unload_index(mm_idx_t *index);
 
