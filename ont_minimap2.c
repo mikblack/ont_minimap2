@@ -80,7 +80,7 @@ int32_t ontmm_cache_idx_occ_thres(const mm_idx_t *index)
 /** call minimap2 alignment and returns SAM string (without header!).
  *  Call free() to free the return value.
  */
-char *ontmm_align(mm_bseq1_t query, const mm_idx_t *index, const int32_t idxMidOcc) {
+char *ontmm_align(mm_bseq1_t query, const mm_idx_t *index, const int32_t idxMidOcc, const int32_t alignment_type) {
   // disable printing to stdout
   mm_verbose = 0;
 
